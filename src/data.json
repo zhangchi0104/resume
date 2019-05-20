@@ -1,0 +1,30 @@
+ {
+    "education": [
+        {
+            "src": "https://www.bing.com/th?id=OIP.ERU-TsWsWoLgMKONoWYhSwHaHa&pid=Api&rs=1&p=0",
+            "alt": "University education",
+            "header": "Bachelor",
+            "meta": "Feb 2018- Nov 2021",
+            "rightContent":"AI/Finance",
+            "leftContent": "UNSW"
+        },
+        {
+            "src": "https://image.freepik.com/free-icon/school_318-23393.jpg",
+            "alt": "High School",
+            "header": "High School",
+            "meta":"Feb 2016 - Nov 2017",
+            "rightContent":"",
+            "leftContent": "Model Farms High School"  
+        }
+    ],
+
+    "award": [
+        
+    ],
+    "projects": [
+        
+    ],
+    "skills": [
+        
+    ]
+ }

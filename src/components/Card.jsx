@@ -3,7 +3,7 @@ import React from "react";
 const Card = props => {
   return (
     <div className="ui card">
-      <div className="image">
+      <div className="image" style = {{padding: "2vh" }}>
         <img src={props.src} alt={props.alt} />
       </div>
       <div className="content">

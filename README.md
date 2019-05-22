@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Resume
+This is my personal resume based on `react` and `redux`
+
+## Installation
+```shell
+git clone https://github.com/zhangchi0104/resume.git
+npm install
+```
+get [Node.js](https://nodejs.org/en/) in order to use `npm` to install dependencies
 
 ## Available Scripts
 
@@ -66,3 +74,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## TODOS
+- Adding more contents
+- Project cards should bring user to github repoos
+- Greater ability for customisation

@@ -23,7 +23,6 @@ export const updateActiveTab = (
 export const activeCards = (activeCards = Data.education, action) => {
   if (action.type === "SELECT_ACTIVE_CARDS") {
     const cardsName = action.payload.name.toLowerCase();
-    console.log(Data[cardsName]);
     return Data[cardsName];
   }
   return activeCards;

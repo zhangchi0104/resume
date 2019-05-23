@@ -4,14 +4,15 @@ import Card from "./Card";
 
 const Cards = props => {
   const cardsStyle = window.innerWidth < 650 ? { margin: "0px" } : {};
+  const extraStyle = props.activeCards.extraStyle ? props.activeCards.extraStyle : "";
   return (
-    <div className="ui centered stackable cards" style={cardsStyle}>
-      {renderCards(props.activeCards)}
+    <div className={`ui ${extraStyle} centered  stackable cards`} style={cardsStyle}>
+      {renderCards(props.activeCards.cards, props.activeCards.containsLinks)}
     </div>
   );
 };
 
-const renderCards = cards => {
+const renderCards = (cards,isContainsLinks) => {
   const renderedCards = cards.map(card => {
     return (
       <Card
@@ -22,6 +23,8 @@ const renderCards = cards => {
         alt={card.alt}
         meta={card.meta}
         key={card.alt}
+        isContainsLinks={isContainsLinks}
+        link={card.link}
       />
     );
   });

@@ -1,5 +1,12 @@
 import React from "react";
-
+const renderLinks = (isContainsLinks, content, link) => {
+  const htmlTags = isContainsLinks ? (
+    <a className="header" href={link}>{content}</a>
+  ) : (
+    <div className="header">{content}</div>
+  ); 
+  return htmlTags; 
+}
 const Card = props => {
   return (
     <div className="ui card">
@@ -7,7 +14,7 @@ const Card = props => {
         <img src={props.src} alt={props.alt} />
       </div>
       <div className="content">
-        <div className="header">{props.header}</div>
+        {renderLinks(props.isContainsLinks, props.header, props.link)}
         <div className="meta">{props.meta}</div>
       </div>
       <div className="extra content">

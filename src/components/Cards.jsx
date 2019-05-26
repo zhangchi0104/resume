@@ -1,20 +1,35 @@
 import React from "react";
 import { connect } from "react-redux";
 import Card from "./Card";
+import LinkedCard from "./LinkCard";
 
 const Cards = props => {
   const cardsStyle = window.innerWidth < 650 ? { margin: "0px" } : {};
-  const extraStyle = props.activeCards.extraStyle ? props.activeCards.extraStyle : "";
+  const extraStyle = props.activeCards.containsLinks ? "link" : "";
   return (
-    <div className={`ui ${extraStyle} centered  stackable cards`} style={cardsStyle}>
+    <div
+      className={`ui ${extraStyle} centered  stackable cards`}
+      style={cardsStyle}
+    >
       {renderCards(props.activeCards.cards, props.activeCards.containsLinks)}
     </div>
   );
 };
 
-const renderCards = (cards,isContainsLinks) => {
+const renderCards = (cards, isContainsLinks) => {
   const renderedCards = cards.map(card => {
-    return (
+    return isContainsLinks ? (
+      <LinkedCard
+        src={card.src}
+        header={card.header}
+        leftContent={card.leftContent}
+        rightContent={card.rightContent}
+        alt={card.alt}
+        meta={card.meta}
+        key={card.alt}
+        link={card.link}
+      />
+    ) : (
       <Card
         src={card.src}
         header={card.header}
@@ -23,8 +38,6 @@ const renderCards = (cards,isContainsLinks) => {
         alt={card.alt}
         meta={card.meta}
         key={card.alt}
-        isContainsLinks={isContainsLinks}
-        link={card.link}
       />
     );
   });

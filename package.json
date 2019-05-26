@@ -8,6 +8,7 @@
     "react-redux": "^7.0.3",
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.87.1"
   },
   "scripts": {

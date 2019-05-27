@@ -47,19 +47,45 @@
       "src": "https://img.icons8.com/dusk/256/000000/bank-card-back-side.png",
       "alt": "Credit Card validator",
       "header": "Credit Card Validator",
-      "meta": "C#",
-      "leftContent": "Basic WPF",
-      "rightContent": "Trie ADT"
+      "meta": "Dec 2018",
+      "leftContent": "C#",
+      "rightContent": "Trie ADT",
+      "link": "https://github.com/zhangchi0104/project-yoho"
     },
     {
       "src": "https://img.icons8.com/ios/256/66ccff/react-native-filled.png",
       "alt": "Resume",
       "header": "Resume",
-      "meta": "React/JSX",
-      "leftContent": "Redux",
-      "rightContent": ""
+      "meta": "May 2019",
+      "leftContent": "JSX/HTML",
+      "rightContent": "React/Redux",
+      "link": "https://github.com/zhangchi0104/project-yoho"
     }
   ]
 },
-  "skills": []
+  "skills": {
+  "cards":  [
+    {
+      "src": "https://img.icons8.com/color/256/000000/fund-accounting.png",
+      "alt": "Finance Skills",
+      "header": "Finance",
+      "meta": "University Degree",
+      "leftContent": "Currently Studying"
+    },
+    {
+      "src": "https://img.icons8.com/color/256/000000/c-sharp-logo-2.png",
+      "alt": "c#",
+      "header": "C#",
+      "meta": "Basic",
+      "leftContent": "OOP Design"
+    }, 
+    {
+      "src": "https://img.icons8.com/color/256/000000/python.png",
+      "alt": "Python",
+      "header": "Python",
+      "meta": "Intermediate",
+      "leftContent": "Flask/Backend Design"
+    }
+  ]
+  }
 }

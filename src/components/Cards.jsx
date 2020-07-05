@@ -28,6 +28,7 @@ const renderCards = (cards, isContainsLinks) => {
         meta={card.meta}
         key={card.alt}
         link={card.link}
+        isImageLocal={card.hasOwnProperty('isImageLocal') && card.isImageLocal}
       />
     ) : (
       <Card
@@ -38,6 +39,7 @@ const renderCards = (cards, isContainsLinks) => {
         alt={card.alt}
         meta={card.meta}
         key={card.alt}
+        isImageLocal={card.hasOwnProperty('isImageLocal') && card.isImageLocal}
       />
     );
   });

@@ -1,10 +1,15 @@
 import React from "react";
 
-const Card = props => {
+const Card = (props) => {
+  const imgSrc = props.isImageLocal
+    ? require("../assets/" + props.src)
+    : props.src;
+  console.log(props)
+  console.log(imgSrc);
   return (
     <div className="ui card">
       <div className="image" style={{ padding: "2vh" }}>
-        <img src={props.src} alt={props.alt} />
+        <img src={imgSrc} alt={props.alt} />
       </div>
       <div className="content">
         <div className="header">{props.header}</div>

@@ -6,8 +6,9 @@ const TopBar = props => {
       <div className="ui stackable grid">
         <div className="ui two wide column">
           <img
+            style={{borderRadius: "50%"}}
             alt="profile_image"
-            src="https://rawcdn.githack.com/amknight/profile-page-workshop/b7841738c730939ac9937b1d31b6acb0dcdb70dc/src/assets/profile4.png"
+            src="https://www.3dmgame.com/uploads/allimg/140605/255_140605204804_1.jpg"
             className="ui tiny image"
           />
         </div>

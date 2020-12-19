@@ -1,11 +1,17 @@
 import React, { FC } from 'react';
-import { Layout } from 'antd'
+import { Row, Col, Layout } from 'antd'
+
 import LeftPanel from './components/LeftPanel'
-import './App.css';
+import RightPanel from './components/RightPane'
+import './App.less';
 
 const App: FC = () => (
-  <Layout >
-    <LeftPanel/>
+  <Layout style={{ minHeight: "100vh" }}>
+    <Row>
+      <Col xs={12} sm={11} md={10} lg={9} xl={7}><LeftPanel /></Col>
+      <Col xs={12} sm={13} md={14} lg={15} xl={17}> <RightPanel />
+      </Col>
+    </Row>
   </Layout>
 )
 export default App;

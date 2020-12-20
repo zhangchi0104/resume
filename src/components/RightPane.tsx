@@ -4,6 +4,7 @@ import { AppState } from '../store/typings'
 import ReactMarkdown from 'react-markdown';
 import markdowns from '../assets'
 import { useSelector } from 'react-redux';
+import { Typography, Divider } from 'antd';
 const RightPane: FC = () => {
   return (
     <Content>
@@ -11,7 +12,14 @@ const RightPane: FC = () => {
     </Content>
   )
 }
-
+const renders = {
+  "heading": (props: any) => (<Typography.Title level={props.level}> {props.children} </Typography.Title>),
+  "text": (props: any) => (<Typography.Text children={props.children} />),
+  "paragraph": (props: any) => (<Typography.Paragraph children={props.children} />),
+  "strong": (props: any) => (<Typography.Text strong children={props.children} />),
+  'thematicBreak': (props: any) => (<Divider />),
+  "link": (props: any) => (<Typography.Link children={props.children} href={props.href} />)
+}
 const Content: FC = (props: any) => (
   <div className="resume-content">
     {props.children}
@@ -30,7 +38,7 @@ const Markdown: FC = () => {
     fetchData()
   }, [pathToMd])
   return (
-    <ReactMarkdown children={markdown} />
+    <ReactMarkdown children={markdown} renderers={renders} />
   )
 }
 

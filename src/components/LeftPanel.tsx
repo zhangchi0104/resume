@@ -32,8 +32,8 @@ const LeftPane: React.FC = () => {
               (v, _) => (
                 <Menu.Item style={{
                   textAlign: "center",
-                  fontSize: "30px",
-                  margin: "15px 0"
+                  fontSize: "20px",
+                  margin: "5px 0"
                 }} key={v}>{v}</Menu.Item>
               )
             )

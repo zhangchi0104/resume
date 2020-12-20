@@ -1,9 +1,10 @@
 import   { createStore } from 'redux'
 import { AppActions, AppState, UPDATE_MENU_ITEM } from './typings'
+import markdowns from '../assets'
 
 const appState : AppState = {
   activeMenuTab: "Education",
-  sections: ["Education", "Projects", "Skills"]
+  sections: [...Object.keys(markdowns)]
 }
 
 export function appReducer (state=appState, action: AppActions) : AppState {

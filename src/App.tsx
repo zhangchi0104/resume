@@ -8,8 +8,8 @@ import './App.less';
 const App: FC = () => (
   <Layout style={{ minHeight: "100vh" }}>
     <Row>
-      <Col xs={12} sm={11} md={10} lg={9} xl={7}><LeftPanel /></Col>
-      <Col xs={12} sm={13} md={14} lg={15} xl={17}> <RightPanel />
+      <Col xs={12} sm={11} md={10} lg={9} xl={6}><LeftPanel /></Col>
+      <Col xs={12} sm={13} md={14} lg={15} xl={18}> <RightPanel />
       </Col>
     </Row>
   </Layout>
